@@ -13,7 +13,7 @@
     <div class="container">
       <h1>Survey</h1>
       <div id="entry">
-        <form id="appointmentForm">
+        <form id="surveyForm">
           <div class="form-group row">
             <label for="name" class="col-2 col-form-label">Your Name</label>
             <div class="col-10">
@@ -43,45 +43,68 @@
           </div>
 
           <div class="form-group row">
-            <label for="start-time" class="col-2 col-form-label">Start Time</label>
-            <div class="col-10">
-            <input class="form-control" type="time" value="12:00:00" id="start-time">
+            <label for="cuisine" class="col-2 col-form-label">Favorite Food</label>
+              <div class="col-10">
+            <label>
+              <input type="radio" name="cuisine-type" value="italian">Italian
+            </label>
+            <label>
+              <input type="radio" name="cuisine-type" value="mexican">Mexican
+            </label>
+            <label>
+              <input type="radio" name="cuisine-type" value="japanese">Japanese
+            </label>
+            <label>
+              <input type="radio" name="cuisine-type" value="chinese">Chinese
+            </label>
+            <label>
+              <input type="radio" name="cuisine-type" value="american">American
+            </label>
+            <label>
+              <input type="radio" name="cuisine-type" value="other">Other
+            </label>
             </div>
           </div>
 
           <div class="form-group row">
-            <label for="end-time" class="col-2 col-form-label">End Time</label>
-            <div class="col-10">
-            <input class="form-control" type="time" value="13:00:00" id="end-time">
+            <label for="music" class="col-2 col-form-label">Favorite Music</label>
+              <div class="col-10">
+            <label>
+              <input type="radio" name="genre" value="pop">Pop
+            </label>
+            <label>
+              <input type="radio" name="genre" value="rock">Rock
+            </label>
+            <label>
+              <input type="radio" name="genre" value="jazz">Jazz
+            </label>
+            <label>
+              <input type="radio" name="genre" value="country">Country
+            </label>
+            <label>
+              <input type="radio" name="genre" value="hiphop">Hiphop/R&B
+            </label>
+            <label>
+              <input type="radio" name="genre" value="other">Other
+            </label>
             </div>
           </div>
 
+
           <div class="form-group row">
-            <label for="description" class="col-2 col-form-label">Description</label>
-            <div class="col-10">
-              <textarea class="form-control" id="description" rows="3"></textarea>
-            </div>
+              <label for="color" class="col-2 col-form-label">Favorite Color</label>
+            <input id="color" class="form-control col-10" type="color">
           </div>
 
           <div class="row">
             <div class="col-2">
             </div>
             <div class="col-10" id="submitButton">
-              <button type="submit" class="btn btn-info">Make appointment</button>
+              <button type="submit" class="btn btn-info">Submit </button>
             </div>
           </div>
         </form>
       </div>
-
-
-      <div class="row" id="confirmation">
-        <div class="col-2">
-        </div>
-        <div class="col-10" id="message">
-          <h2>Booking Successful!</h2>
-        </div>
-      </div>
-    </div>
 
 
   </body>

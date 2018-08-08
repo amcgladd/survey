@@ -3,14 +3,15 @@
 
 //front End
 $(document).ready(function() {
-  $("form#appointmentForm").submit(function() {
+  $("form#surveyForm").submit(function() {
     var nameInput = $("input#name").val();
-    var dateInput = $("input#date").val();
-    var startInput = $("input#start-time").val();
-    var endInput = $("input#end-time").val();
-    var descriptionInput = $("input#description").val();
+    var genderInput = $("input#gender").val();
+    var birthdayInput = $("input#birthday").val();
+    var cuisineInput = $("input#cuisine").val();
+    var musicInput = $("input#music").val();
+    var colorInput = $("input#color").val();
 
-    $("#confirmation").show();
+    // $("#confirmation").show();
 
     event.preventDefault();
   });
